@@ -7,7 +7,7 @@ from enum import Enum
 app = FastAPI()
 
 
-class Status(Enum):
+class Status(str, Enum):
     OK = "OK"
     NOK = "NOK"
 
